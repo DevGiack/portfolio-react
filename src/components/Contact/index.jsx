@@ -2,6 +2,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 import './index.scss'
 
 const Contact = () => {
@@ -14,21 +15,26 @@ const Contact = () => {
     }, 3000)
   }, [])
 
-  const sendEmail =(e) => {
-        e.preventDefault()
+  const sendEmail = (e) => {
+    e.preventDefault()
 
-        emailjs
-        .sendForm('default_service', 'template_85lpn0k', form.current, 'Wf91JVL-8hqdRQHaO')
-        .then(
-          () => {
-            alert("Votre message a été envoyé, je vous contact rapidement !")
-            window.location.reload(false)
-          },
-          () => {
-            alert("Erreur lors de l'envoie du message, veuillez réessayer !")
-          }
-        )
-    }
+    emailjs
+      .sendForm(
+        'default_service',
+        'template_85lpn0k',
+        form.current,
+        'Wf91JVL-8hqdRQHaO'
+      )
+      .then(
+        () => {
+          alert('Votre message a été envoyé, je vous contact rapidement !')
+          window.location.reload(false)
+        },
+        () => {
+          alert("Erreur lors de l'envoie du message, veuillez réessayer !")
+        }
+      )
+  }
 
   return (
     <>
@@ -73,7 +79,7 @@ const Contact = () => {
             vous pouvez me proposer.
           </p>
           <div className="contact-form">
-          <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Nom" required />
@@ -105,7 +111,23 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-                
+          Jaccomo De Grégorio,
+          <br />
+          74970 Marignier,
+          <br />
+          Auvergne-Rhône-Alpes,
+          <br />
+          France
+          <br />
+          <span>devgiack@protonmail.com</span>
+        </div>
+        <div className="map-wrap">
+          <MapContainer center={[46.090381, 6.49929]} zoom={13}>
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={[46.090381, 6.49929]}>
+                <Popup>Rencontrons nous autour d'un café.</Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
