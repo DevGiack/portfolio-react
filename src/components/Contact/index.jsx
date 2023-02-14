@@ -1,16 +1,34 @@
-import './index.scss'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
+import './index.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const form = useRef()
 
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
+
+  const sendEmail =(e) => {
+        e.preventDefault()
+
+        emailjs
+        .sendForm('default_service', 'template_85lpn0k', form.current, 'Wf91JVL-8hqdRQHaO')
+        .then(
+          () => {
+            alert("Votre message a été envoyé, je vous contact rapidement !")
+            window.location.reload(false)
+          },
+          () => {
+            alert("Erreur lors de l'envoie du message, veuillez réessayer !")
+          }
+        )
+    }
 
   return (
     <>
@@ -54,6 +72,40 @@ const Contact = () => {
             serais ravi de vous rencontrer pour discuter des opportunités que
             vous pouvez me proposer.
           </p>
+          <div className="contact-form">
+          <form ref={form} onSubmit={sendEmail}>
+              <ul>
+                <li className="half">
+                  <input type="text" name="name" placeholder="Nom" required />
+                </li>
+                <li className="half">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </li>
+                <li>
+                  <input
+                    placeholder="Sujet"
+                    type="text"
+                    name="subject"
+                    required
+                  />
+                </li>
+                <li>
+                  <textarea placeholder="Message" name="message"></textarea>
+                </li>
+                <li>
+                  <input type="submit" className="flat-button" />
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+        <div className="info-map">
+                
         </div>
       </div>
       <Loader type="pacman" />
