@@ -1,19 +1,19 @@
 {
         "portfolio": [
                 {
-                "cover": "../assets/portfolio/1/one.png",
+                "cover": "./src/assets/portfolio/1/one.png",
                 "title": "TEST",
                 "description": "React, HTML5 and CSS3",
                 "url": "http://google.com"
         },
         {
-                "cover": "../assets/portfolio/1/one.png",
+                "cover": "./src/assets/portfolio/1/one.png",
                 "title": "TEST",
                 "description": "React, HTML5 and CSS3",
                 "url": "http://google.com"
         },
         {
-                "cover": "../assets/portfolio/1/one.png",
+                "cover": "./src/assets/portfolio/1/one.png",
                 "title": "TEST",
                 "description": "React, HTML5 and CSS3",
                 "url": "http://google.com"

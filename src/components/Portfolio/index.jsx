@@ -21,6 +21,7 @@ const Portfolio = () => {
             <div className="image-box" key={idx}>
               <img
                 src={port.cover}
+                // src={import ("../../assets/portfolio/1/one.png")}
                 alt="portfolio"
                 className="portfolio-image"
               />
