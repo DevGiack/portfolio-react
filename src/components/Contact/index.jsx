@@ -28,7 +28,8 @@ const Contact = () => {
       .then(
         () => {
           alert('Votre message a été envoyé, je vous contact rapidement !')
-          window.location.reload(false)
+          // window.location.reload(false)
+          form.current.reset(); 
         },
         () => {
           alert("Erreur lors de l'envoie du message, veuillez réessayer !")
