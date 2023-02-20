@@ -151,11 +151,12 @@
                         position: fixed;
                         z-index: 2;
                         margin: 0;
-
+                        padding-top: 40%;
                         a {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
+                                color: #e4e4e4;
                         }
         
                         a:after {
@@ -167,6 +168,8 @@
 
                         a svg {
                                 opacity: 1 !important;
+                                color: #e4e4e4;
+
                         }
 
                         &.mobile-show {
