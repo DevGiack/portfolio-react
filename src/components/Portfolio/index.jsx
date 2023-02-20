@@ -3,6 +3,7 @@ import './index.scss'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import portfolioData from '../../data/portfolio.json'
+import TSM from "../../assets/images/TSM-home.png"
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -21,7 +22,7 @@ const Portfolio = () => {
             <div className="image-box" key={idx}>
               <img
                 src={port.cover}
-                // src={import ("../../assets/portfolio/1/one.png")}
+                // src={TSM}
                 alt="portfolio"
                 className="portfolio-image"
               />
