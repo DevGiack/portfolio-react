@@ -81,7 +81,7 @@
         }
 }
 
-@media  screen and (max-width:1200px) { 
+@media  screen and (max-width:1024px) { 
         .tag,
         .home-page h1::before,
         .home-page h1::after
@@ -91,7 +91,7 @@
         .home-page {
                 .text-zone {
                 position: inherit;
-                width: 105%;
+                width: 107%;
                 transform: none;
                 padding: 10px 0 10px 8px; 
                 box-sizing: border-box;
