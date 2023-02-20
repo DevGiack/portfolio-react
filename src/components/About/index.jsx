@@ -11,6 +11,7 @@ import {
   faJsSquare,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import CV from '../../assets/CV/CV_Jaccomo_De_Gregorio.pdf'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -48,6 +49,8 @@ const About = () => {
             développeur web.
           </p>
         </div>
+
+        <a href={CV} className="button-cv">Mon CV</a>
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
