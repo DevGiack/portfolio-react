@@ -43,10 +43,6 @@ const About = () => {
             qu'elle offre.
             <br />
             <br />
-            Je suis fier de ma décision courageuse et déterminé à atteindre de
-            nouveaux sommets dans ce domaine en constante évolution.
-            <br />
-            <br />
             Je suis impatient de découvrir où cette aventure m'emmènera et je
             suis prêt à relever tous les défis pour réussir en tant que
             développeur web.
