@@ -50,9 +50,8 @@ const About = () => {
           </p>
           <br />
           <br />
-           <a href={CV} className="button-cv">Mon CV</a>
+           <a href={CV} className="button-cv" target="_blank">Mon CV</a>
         </div>
-
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
