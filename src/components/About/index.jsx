@@ -48,6 +48,8 @@ const About = () => {
             suis prêt à relever tous les défis pour réussir en tant que
             développeur web.
           </p>
+          <br />
+          <br />
            <a href={CV} className="button-cv">Mon CV</a>
         </div>
 
