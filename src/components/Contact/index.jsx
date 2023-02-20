@@ -63,7 +63,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            Passionné par le développement web, je suis à la recherche d'une alterance de 16
+            Passionné par le développement web, je suis à la recherche d'une alternance de 16
             mois afin d'acquérir une expérience pratique dans ce domaine
             passionnant. <br />
             <br />
