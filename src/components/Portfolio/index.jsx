@@ -4,6 +4,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import portfolioData from '../../data/portfolio.json'
 import TSM from "../../assets/images/TSM-home.png"
+import THP from "../../assets/images/THP-home.png"
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -17,26 +18,42 @@ const Portfolio = () => {
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
-        {portfolio.map((port, idx) => {
-          return (
-            <div className="image-box" key={idx}>
+
+            <div className="image-box" >
               <img
-                src={port.cover}
-                // src={TSM}
+                src={TSM}
                 alt="portfolio"
                 className="portfolio-image"
               />
               <div className="content">
-                <p className="title">{port.title}</p>
-                <h4 className="description">{port.description}</h4>
-                <button className="btn" onClick={() => window.open(port.url)}>
+                <p className="title">Truffières Saint-Martin</p>
+                <h4 className="description">Rails,JS, HTML5 and CSS3</h4>
+                <a href="https://warm-shore-71821.herokuapp.com/" target="_blank">
+                <button className="btn" >
                   Voir
                 </button>
+                </a>
+              </div>
+            </div>
+            <div className="image-box" >
+              <img
+                src={THP}
+                alt="portfolio"
+                className="portfolio-image"
+              />
+              <div className="content">
+                <p className="title">The Hyper Progame</p>
+                <h4 className="description">JS, HTML5 and CSS3</h4>
+                <a href="https://pro-game-five.vercel.app/#pagelist" target="_blank">
+                <button className="btn" >
+                  Voir
+                </button>
+                </a>
               </div>
             </div>
           )
-        })}
       </div>
+      
     )
   }
 
