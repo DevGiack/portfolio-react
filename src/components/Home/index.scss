@@ -83,9 +83,10 @@
 
 @media  screen and (max-width:1024px) { 
         .tag,
+        .bottom-tags,
         .home-page h1::before,
-        .home-page h1::after
-                {display: none;
+        .home-page h1::after {
+                display: none;
         }
 
         .home-page {
@@ -109,7 +110,8 @@
                         width: 100px;
                         height: auto;
                         top: 50px;
-                        right: 0;box-sizing: border-box;
+                        right: 0;
+                        box-sizing: border-box;
                         margin: auto;
                         left: 0;
 
@@ -123,4 +125,5 @@
                 }
                 }
         }
+
 }
