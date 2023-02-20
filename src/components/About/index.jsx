@@ -48,9 +48,9 @@ const About = () => {
             suis prêt à relever tous les défis pour réussir en tant que
             développeur web.
           </p>
+           <a href={CV} className="button-cv">Mon CV</a>
         </div>
 
-        <a href={CV} className="button-cv">Mon CV</a>
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
