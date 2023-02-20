@@ -63,19 +63,17 @@ const Contact = () => {
             />
           </h1>
           <p>
-            Passionné par le développement web, je suis actuellement en
-            reconversion professionnelle pour devenir développeur fullstack.
-            Pour valider mon diplôme, je suis à la recherche d'un stage de 2
+            Passionné par le développement web, je suis à la recherche d'une alterance de 16
             mois afin d'acquérir une expérience pratique dans ce domaine
             passionnant. <br />
             <br />
             Je suis motivé, sérieux et désireux d'apprendre autant que possible.
-            Je suis convaincu que ce stage me permettra d'acquérir les
+            Je suis convaincu que cette alternance me permettra d'acquérir les
             compétences dont j'ai besoin pour réussir dans cette industrie en
             constante évolution.
             <br />
             <br />
-            Si vous êtes à la recherche d'un stagiaire dynamique et curieux, je
+            Si vous êtes à la recherche d'un développeur dynamique et curieux, je
             serais ravi de vous rencontrer pour discuter des opportunités que
             vous pouvez me proposer.
           </p>
